@@ -145,7 +145,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\mysql_wrapper\message_2_mysql.cpp" />
+    <ClCompile Include="..\src\mysql_wrapper\mysql_client.cpp" />
+    <ClCompile Include="..\src\mysql_wrapper\mysql_database.cpp" />
+    <ClCompile Include="..\src\mysql_wrapper\mysql_database_test.pb.cc" />
     <ClCompile Include="mysql_client_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\mysql_wrapper\message_2_mysql.h" />
+    <ClInclude Include="..\src\mysql_wrapper\mysql_client.h" />
+    <ClInclude Include="..\src\mysql_wrapper\mysql_database.h" />
+    <ClInclude Include="..\src\mysql_wrapper\mysql_database_test.pb.h" />
+    <ClInclude Include="..\src\mysql_wrapper\mysql_result.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\mysql_wrapper\mysql_database_test.proto" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
