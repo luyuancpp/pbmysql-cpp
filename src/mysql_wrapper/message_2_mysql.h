@@ -10,9 +10,10 @@
 #include "google/protobuf/descriptor.h"
 #include "google/protobuf/message.h"
 
-#include "src/type_define/type_define.h"
-#include "src/mysql_wrapper/mysql_result.h"
+#include "mysql_result.h"
 
+
+using StringVector = std::vector<std::string>;
 
 static int32_t kPrimaryKeyIndex = 0;
 
